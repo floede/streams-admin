@@ -1,0 +1,53 @@
+<h1>All streams</h1>
+
+<table>
+	<tr>
+		<th>
+			Title
+		</th>
+		<th>
+			Description
+		</th>
+		<th>
+			Date
+		</th>
+		<th>
+			Time
+		</th>
+		<th>
+			URL
+		</th>
+		<th>
+			Stream URL
+		</th>
+	</tr>
+
+  <% @streams.each do |stream| %>
+    <tr>
+		<td>
+			
+			<%= stream.title %>
+		</td>
+		<td>
+			
+			<%= stream.desc %>
+		</td>
+		<td>
+			
+			<%= stream.date %>
+		</td>
+		<td>
+			
+			<%= stream.time %>
+		</td>
+		<td>
+			
+			<%= stream.url %>
+		</td>
+		<td>
+			
+			<%= stream.streamurl %>
+		</td>      
+    </tr>
+  <% end %>
+</table>
