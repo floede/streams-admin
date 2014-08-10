@@ -3,5 +3,9 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  $('.datepicker').datetimepicker();
-  $('.timepicker').datetimepicker();
+	$('#datepicker').datetimepicker({
+		pickTime: false
+	});
+	$('#timepicker').datetimepicker({
+		pickDate: false
+	});	

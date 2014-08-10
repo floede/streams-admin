@@ -8,10 +8,25 @@
 		<%= form.text_area :desc, as: :text, label: 'Description' %>
 	</p>
 	<p>
-		<%= form.input :stream_date, input_html: { class: 'datepicker' } %>
+	
+	<div class='input-group date' id='datepicker'>
+		<!--input type='text' class="form-control" data-date-format="YYYY/MM/DD" -->
+		<%= form.input :stream_date, input_html: { class: 'form-control' } %>
+		<span class="input-group-addon">
+			<span class="glyphicon glyphicon-calendar"></span>
+		</span>
+	</div>
+
 	</p>
 	<p>
-		<%= form.input :stream_time, input_html: { class: 'timepicker' } %><%= form.input :time_zone %>
+		
+	<div class='input-group date' id='timepicker'>
+		<%= form.input :stream_time, input_html: { class: 'form-control' } %>
+		<span class="input-group-addon">
+			<span class="glyphicon glyphicon-calendar"></span>
+		</span>
+		<%= form.input :time_zone %>
+	</div>		
 	</p>
 	<p>
 		<%= form.input :url, as: :url %>
