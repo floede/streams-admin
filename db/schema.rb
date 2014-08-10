@@ -16,10 +16,11 @@ ActiveRecord::Schema.define(version: 20140808213557) do
   create_table "streams", force: true do |t|
     t.string   "title"
     t.text     "desc"
-    t.date     "date"
-    t.time     "time"
+    t.date     "stream_date"
+    t.time     "stream_time"
+    t.string   "time_zone"
     t.string   "url"
-    t.string   "streamurl"
+    t.string   "stream_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

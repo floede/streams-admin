@@ -3,10 +3,11 @@ class CreateStreams < ActiveRecord::Migration
     create_table :streams do |t|
       t.string :title
       t.text :desc
-      t.date :date
-      t.time :time
+      t.date :stream_date
+      t.time :stream_time
+      t.string :time_zone
       t.string :url
-      t.string :streamurl
+      t.string :stream_url
 
       t.timestamps
     end

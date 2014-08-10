@@ -2,6 +2,6 @@ StreamsAdmin::Application.routes.draw do
   
   resources :streams
 
-  root 'stream#index'
+  root 'streams#new'
 
 end
